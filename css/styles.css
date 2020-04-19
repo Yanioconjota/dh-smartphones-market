@@ -1,0 +1,240 @@
+/* Reset */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(65, 65, 65);
+  font-size: 13px;
+  background-color: aquamarine;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+  transition: all .2s ease-in-out;
+}
+
+p,
+a {
+  font-weight: 400;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* End Reset */
+
+/* Custom elements */
+main {
+  width: 960px;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: rgb(195, 53, 34);
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background-color: rgb(148, 38, 24);
+}
+
+.picture {
+  background-size: cover;
+  background-position: center;
+  min-height: 1px;
+  transition: all .2s ease-in-out;
+  background-color: transparent;
+}
+
+.picture:hover,
+.picture:link,
+.picture:visited,
+.picture:active {
+  border: 0;
+  outline: none;
+}
+
+/* End Custom elements */
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: rgb(195, 53, 34);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 960px;
+}
+
+.navbar > * {
+  display: flex;
+  align-items: center;
+}
+
+.navar-left {
+  float: left;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-left a,
+.navbar-right a {
+  color: #fff;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.navbar-left > * {
+  margin-right: 10px;
+}
+
+.navbar-right > * {
+  margin-right: 10px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar .logo img {
+  height: 35px;
+}
+
+/* End Navbar Styles */
+
+/* Sections styling */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 95px;
+}
+
+/* Main Section */
+.main-section-container {
+  width: 70%;
+  background-color: #fff;
+}
+
+.card {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card .picture,
+.card h3,
+.card p {
+  margin-bottom: 15px;
+}
+
+.card .picture {
+  width: 100%;
+  height: 200px;
+}
+
+/* End Main Section */
+
+/* Side Section */
+
+.side-section-container {
+  width: 30%;
+}
+
+.side-section {
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.side-section h3 {
+  margin-bottom: 20px;
+}
+
+.side-section h3,
+.side-item {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(151, 151, 151);
+  background-color: #fff;
+}
+
+.side-item {
+  display: flex;
+  align-items: center;
+}
+
+.side-item:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.side-item .picture {
+  width: 40%;
+  height: 60px;
+  margin-right: 15px;
+  border: none;
+}
+
+.side-item p {
+  width: 80%;
+}
+
+.side-item.ad {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.side-item.ad p {
+  margin: 10px 0;
+}
+
+/* End Side Section */
+
+/* End Sections styling */
